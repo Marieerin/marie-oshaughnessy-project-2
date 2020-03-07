@@ -1,11 +1,12 @@
 $mainBlack: #000000;
+$mainWhite: #ffffff;
 $lightColor: #EDEDED;
 // Pale turquoise
 // #A4F1DC
 // Yellowish orange
 // #F6AB09
 // Baby shit green
-// #84A016
+$contrastColor:#84A016;
 $secondaryColor: #999999;
 $secondaryLightColor:#CCCCCC;
 // Very light pink two
@@ -47,6 +48,13 @@ ul {
 .flexParent {
     display: flex;
 }
+.lightText {
+    color: $secondaryColor;
+}
+h1,
+h2 {
+        font-size: 58px;
+    }
 /* end of global styles */
 
 /* mixins */

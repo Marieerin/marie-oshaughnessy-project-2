@@ -13,7 +13,7 @@
     <title>Contact Us!</title>
 </head>
 
-<body>
+<body >
     <!-- navigation bar -->
     <nav>
         <section class="wrapper flexParent">
@@ -22,7 +22,7 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Reserve</a></li>
             </ul>
-            <h1>Sunshine</h1>
+            <h2>Sunshine</h2>
             <ul class="flexParent">
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
@@ -41,24 +41,31 @@
     </header>
     <main>
         <section class="contactDetails wrapper">
-            <h2>Contact details</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perferendis quia maxime at rem?</p>
+            <h1>Contact details</h1>
+            <p class="lightText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perferendis quia maxime at rem?</p>
             <ul>
                 <li>
+                    <i class="fas fa-mobile-alt"></i>
                     <h3>Phone</h3>
-                    <p></p>
+                    <p class="lightText">Phone 01: (0091) 8547 23489</p>
+                    <p class="lightText">Phone 02: (0091) 8547 23489</p>
                 </li>
-                <li>
+                <li class="sideBorder">
+                    <i class="fas fa-map-marker-alt"></i>
                     <h3>Address</h3>
-                    <p></p>
+                    <p class="lightText">123 king forest st, ursla building</p>
+                    <p class="lightText">Honolulu Hawaii</p>
                 </li>
                 <li>
+                    <i class="fas fa-envelope"></i>
                     <h3>Email</h3>
-                    <p></p>
+                    <p class="lightText">support@sunshine.com</p>
+                    <p class="lightText">hello@sunshine.com</p>
                 </li>
             </ul>
         </section>
         <section class="getInTouch wrapper">
+            <h2>Get in touch with us</h2>
             <form action="">
                 <fieldset>
                     <label for="name" class="visuallyHidden">Enter your name.</label>
@@ -70,8 +77,9 @@
                 </fieldset>
                 <fieldset>
                     <label for="message" class="visuallyHidden"></label>
-                    <input type="text" id="message">
+                    <input type="text" id="message" placeholder="Here goes your message">
                 </fieldset>
+                <input type="submit" id="submit">
             </form>
         </section>
         <section class="beforeFooterImage">
