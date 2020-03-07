@@ -1,0 +1,45 @@
+/* footer */
+    footer {
+    background-color: black;
+    color: #999999;
+    padding-top: 30px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    span:hover,
+    span:focus,
+    li:hover,
+    li:focus {
+        color: #CCCCCC;
+        label {
+            display: block;
+            padding-bottom: 20px;
+        }
+        button[type="submit"] {
+            background-color: black;
+            border-top: none;
+            border-right: none;
+            border-bottom: 1.5px solid #99999952;
+            border-left: none;
+            color: #CCCCCC;
+        }
+    } 
+}
+.mapsFAQEmail,
+.copyAndSocials {
+    display: flex;
+    justify-content: space-between;
+}
+.mapsFAQEmail {
+    padding: 20px 0 50px;
+}
+.mapsFAQEmail li {
+    padding: 0 0 20px;
+}
+.copyAndSocials li {
+    padding: 10px 20px 35px;
+}
+.socials {
+    display: flex;
+}
+/* footer end */

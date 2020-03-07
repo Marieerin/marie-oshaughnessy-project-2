@@ -1,0 +1,39 @@
+.homeBody {
+    background-image: url('assets/pattern.png');
+    background-repeat: repeat;
+    .homeMain {
+        .aboutUs {
+            background-color: $lightColor;
+            text-align: center;
+            .aboutUsPhotographAndContent {
+                display: flex;
+                h2 {
+                    padding: 0;
+                }
+            }
+        }
+        .aboutUsPhotograph {
+            position: relative;
+            margin-bottom: 78px;
+            .homeCircle {
+                left: 89px;
+                position: relative;
+                top: 70px;
+                width: 150px;
+            }
+            .photo {
+                border: 5px solid white;
+                box-shadow: 0 0 20px gray;
+            }
+        }
+        .aboutUsContent {
+            display: flex;
+            flex-direction: column;
+            width: calc(50vw / 2);
+            margin-left: 18px;
+            span {
+                display: inline-block;
+            }
+        }
+    }
+}

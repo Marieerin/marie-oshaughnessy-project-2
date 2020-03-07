@@ -7,7 +7,7 @@
     <!-- fontAwesome -->
     <script src="https://kit.fontawesome.com/a80f027cee.js" crossorigin="anonymous"></script>
     <!-- stylesheet -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 
 
     <title>Sunshine</title>
@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body class="blogBody">
     <!-- navigation bar -->
     <nav>
         <section class="wrapper flexParent">
@@ -24,7 +24,7 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Reserve</a></li>
             </ul>
-            <h1>Sunshine</h1>
+            <h2>Sunshine</h2>
             <ul class="flexParent">
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
@@ -37,25 +37,28 @@
             </ul>
         </section>
     </nav>
+
+    
     <header class="blogHeader">
-        <img src="./assets/blog-1.jpeg" alt="">
+        <img src="assets/blog-1.jpeg" alt="">
     </header>
-    <main class="blogMain">
+    <main class="blogMain wrapper">
         <section class="article">
             <!-- title of blog post -->
             <div>
-                <h2>Sunshine Hotel in top 5 best hotel from TripAdvisor magazine</h2>
-                <span></span>
+                <h1>Sunshine Hotel in top 5 best hotel from TripAdvisor magazine</h1>
+                <span><a href="#">Home ></a><a href="#">Blog ></a><a href="#">Sunshine hotel in top 5 best hotel form TripAdvisor magazine</a> </span>
             </div>
-            <div>
-                <!-- bubble image in the blog post -->
-                <div>
-                    <img src="" alt="">
-                    <h3>Alex Furgson</h3>
-                    <span>Admin</span>
+            <div class="publicationCard">
+                <div class="author">
+                    <img src="./assets/blog-2.jpeg" alt="">
+                    <div>
+                        <h3>Alex Furgson</h3>
+                        <span>Admin</span>
+                    </div>
                 </div>
 
-                <ul>
+                <ul class="publicationInfo">
                     <li>
                         <h3>Date</h3>
                         <span>June 19th, 2018</span>
@@ -70,10 +73,13 @@
                     </li>
                 </ul>
             </div>
-            <div>
-                <p><span></span></p>
+            <div class="blogPost">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae illo dolor tempore? Accusantium saepe ratione quam vero illo hic tempora, ut ipsa amet libero, corrupti eos natus animi possimus est.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, quos. Doloremque assumenda velit quo, maiores nulla porro minus voluptates molestias libero sed vero dignissimos, enim earum explicabo unde aliquam voluptatum!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam magni recusandae soluta alias minima, repellendus cupiditate, nam sequi temporibus incidunt esse debitis pariatur. Dicta voluptatibus commodi porro facilis voluptatum vel.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sunt sapiente illum excepturi minima, eius facere autem quam quia, quas provident, perferendis architecto iste aperiam sit dicta amet! Quae, cupiditate!</p>
             </div>
-            <div>
+            <div class="article-socials">
                 <h3>Share:</h3>
                 <ul>
                     <li>
@@ -86,7 +92,7 @@
                         <i class="fab fa-facebook-f"></i>
                     </li>
                     <li>
-                        <!-- google+ -->
+                        <i class="fab fa-google-plus-g"></i>
                     </li>
                 </ul>
             </div>
@@ -95,50 +101,85 @@
             <h2>Related Posts</h2>
             <ul>
                 <li>
-                    <img src="" alt="">
+
+                    <img src="assets/blog-3.jpeg"" alt="Airplane parked on a beautiful beach">
                     <div>
                         <span>June 24th, 2016</span>
+                        <h3>Five reasons to stay at the beautiful Sunshine Hotel</h3>
+                        <span>Continue<i class="fas fa-long-arrow-alt-right"></i></span>
                     </div>
                 </li>
                 <li>
-                    <img src="" alt="">
+                    <img src="assets/blog-4.jpeg" alt="Woman swimming in crystal clear water">
                     <div>
                         <span>April 24th, 2016</span>
+                        <h3>Experience romantic space just have only at Sunshine hotel</h3>
+                        <span>Continue<i class="fas fa-long-arrow-alt-right"></i></span>
+
                     </div>
                 </li>
                 <li>
-                    <img src="" alt="">
+                    <img src="assets/blog-5.jpeg" alt="Sun shining on an expensive looking hotel">
                     <div>
                         <span>May 8th, 2016</span>
+                        <h3>Discover activities interested in Sunshine Hotel</h3>
+                        <span>Continue<i class="fas fa-long-arrow-alt-right"></i></span>
+
                     </div>
                 </li>
             </ul>
+        </section class="commentSection1">
+        <h2>02 Comments</h2>
+            <ul>
+                <li>
+                    <img src="assets/blog-6.jpeg" alt="Display image">
+                    <div>
+                        <h3>Daniel Vandaft - <span>Reply</span></h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                        <span>July 17 at 15 hourse ago</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/blog-7.jpeg" alt="Display image">
+                    <div>
+                        <h3>Jenifer Loops - <span>Reply</span></h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                        <span>July 17 at 15 hourse ago</span>
+                    </div>
+                </li>
+            </ul>
+        <section>
+
         </section>
-        <section class="commentSection">
-            <!-- heading "Leave A Comment" -->
+
+        <section class="commentSection2">
+            <h2>Leave a Comment</h2>
             <form action="">
                 <fieldset>
-                    <label for="name" class="">Name</label>
+                    <label for="name" class="visuallyHidden">Name</label>
                     <input type="text" id="name" name="name" placeholder="Enter you name...">
-                    <label for="email" class=""></label>
+                    <label for="email" class="visuallyHidden"></label>
                     <input type="email" id="email" placeholder="youremail@domain.com">
-                    <label for="subject" class=""></label>
+                    <label for="subject" class="visuallyHidden"></label>
                     <input type="text" id="subject" placeholder="Subject (Optional)">
                 </fieldset>
                 <fieldset>
-                    <label for="comment" class=""></label>
+                    <label for="comment" class="visuallyHidden"></label>
                     <input type="text" id="comment" placeholder="Here goes your comment">
                 </fieldset>
                 <fieldset>
-                    <!-- submit button -->
+                    <button type="submit"></button>
                 </fieldset>
             </form>
         </section>
 
     </main>
+
+
+
     <!-- footer -->
     <footer>
-        <section class="mapsFAQEmail wrapper flexParent">
+        <section class="mapsFAQEmail wrapper">
             <ul>
                 <li>Terms& Conditions</li>
                 <li>Privacy Policy</li>
@@ -153,8 +194,8 @@
             </ul>
             <form action="">
                 <label for="email">Sign up for our newsletter</label>
-                <input type="email" id="email" name="Your email" placeholder="Your email"><i class="far fa-paper-plane"
-                    type="submit"></i>
+                <input type="email" id="email" name="Your email" placeholder="Your email">
+                <button type="submit"><i class="far fa-paper-plane"></i></button>
 
             </form>
         </section>

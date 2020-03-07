@@ -1,0 +1,39 @@
+/* NAV */
+*{
+    list-style:none;
+    text-decoration:none;
+}
+nav {
+    background-color: white
+
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        font-size: 23px;
+        padding: 10px;
+        text-decoration: none;
+    }
+    li {
+        list-style:none;
+        padding: 10px;
+
+    }
+    li a:hover,
+    li a:focus {
+        color: #999999;
+    }
+}
+
+h1, 
+h2 {
+    font-size: 58px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+/* nav end */
