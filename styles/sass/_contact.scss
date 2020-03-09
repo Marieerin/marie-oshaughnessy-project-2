@@ -68,8 +68,9 @@
     }
     input:focus {
         color: $mainBlack;
-        border-bottom: 1px solid $mainBlack;
+        border-bottom: 1px solid $secondaryLightColor;
     }
+
     #message {
         padding: 0 80% 250px 0;
     }

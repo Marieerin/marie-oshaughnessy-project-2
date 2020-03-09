@@ -8,6 +8,10 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="styles/styles.css">
 
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i,700|Poppins:400,600&display=swap"
+    rel="stylesheet">
+
 
     <title>Home</title>
 
@@ -19,15 +23,22 @@
     <!-- navigation bar -->
     <nav>
         <section class="wrapper">
-            <ul class="flexParent">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Reserve</a></li>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Reserve</a>
+                </li>
             </ul>
             <h1>Sunshine</h1>
+            <i class="fas fa-bars"></i>
             <ul>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li>
                     <a href="#"><i class="fas fa-search"></i></a>
                 </li>
@@ -45,7 +56,7 @@
     <main class="homeMain">
         <section class="aboutUs">
             <div class="wrapper">
-                <span>A Little About Us</span>
+                <span class="lightText allCaps">A Little About Us</span>
                 <div class="aboutUsPhotographAndContent">
                     <div class="aboutUsPhotograph">
                         <img src="assets/home-circle-text.png"  class="homeCircle"" alt="">
@@ -54,108 +65,139 @@
                     <div class="aboutUsContent">
                         <div class="theBar"></div>
                         <h2>A great place to enjoy your life</h2 >
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat sequi fuga rem itaque nemo voluptas eum quibusdam aspernatur, magni ea dicta dolorem eveniet, atque in repellat reprehenderit natus adipisci suscipit.</p>
-                        <p>Ethan Hunt <span>- Director at Monalisa</span></p>
+                        <p class="lightText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat sequi fuga rem itaque nemo voluptas eum quibusdam aspernatur, magni ea dicta dolorem eveniet, atque in repellat reprehenderit natus adipisci suscipit.</p>
+                        <p class="allCaps">Ethan Hunt <span class="lightText lowerCase">- Director at Monalisa</span></p>
                     </div>
                 </div>
             </div>
 
         </section>
         <section class="categories">
-            <ul>
-                <li>
-                    <!-- icon -->
-                    <h3>Sunny Season</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facere ratione enim ut officiis.</p>
-                </li>
-                <li>
-                    <!-- icon -->
-                    <h3>Flight Included</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facere ratione enim ut officiis.</p>
-                </li>
-                <li>
-                    <!-- icon -->
-                    <h3>Guided Nature Excursions</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facere ratione enim ut officiis.</p>
-                </li>
-
-            </ul>
-            <ul>
-                <li>
-                    <!-- icon -->
-                    <h3>Five Star Restaurants</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facere ratione enim ut officiis.</p>
-                </li>
-                <li>
-                    <!-- icon -->
-                    <h3>All Inclusive</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facere ratione enim ut officiis.</p>
-                </li>
-                <li>
-                    <!-- icon -->
-                    <h3>Wake Up Service</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facere ratione enim ut officiis.</p>
-                </li>
-            </ul>
-        </section>
-        <!-- side arrow -->
-        <section class="review wrapper">
-            <div>
-                <span class="">Testimonials</span>
-                <h3>What Clients Say</h3>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias debitis veritatis non ab quisquam placeat sapiente amet expedita ipsam? Ipsum vitae itaque assumenda aperiam voluptatibus ducimus, officia quod labore rerum.</p>
-                </div>
-                <div>
-                    <!-- stars -->
-                </div>
-            </div>
-        </section>
-        <!-- side arrow -->
-        <section class="gallery wrapper">
-            <span class="">Explore</span>
-            <h2>Gallery</h2>
-            <ul>
-                <li>
-                    <img src="assets/home-4.jpeg" alt="">
-                </li>
-                <li>
-                    <img src="assets/home-5.jpeg" alt="">
-                </li>
-                <li>
-                    <img src="assets/home-6.jpeg" alt="">
-                </li>
-                <li>
-                    <img src="assets/home-7.jpeg" alt="">
-                </li>
-                <li>
-                    <img src="assets/home-8.jpeg" alt="">
-                </li>
-                <li>
-                    <img src="assets/home-9.jpeg" alt="">
-                </li>
-            </ul>
-        </section>
-        <section class="contact">
             <div class="wrapper">
-                <span class="">Information</span>
-                <h3>Contact Us</h3>
                 <ul>
                     <li>
-                        <h4>Honolulu, <span class="lightText">Hawaii</span></h4>
-                        <p>123 King Str, 4th Floor, Utral Building.</p>
-                        <p>Honolulu Hawaii</p>
+                        <i class="fas fa-sun"></i>
+                        <div>
+                            <h3>Sunny Season</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facere ratione enim ut officiis.</p>
+                        </div>
                     </li>
                     <li>
-                        <p>Email: <span class="lightText">info@sunshinehotel.com</span></p>
+                        <i class="fas fa-plane"></i>
+                        <div>
+                            <h3>Flight Included</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facere ratione enim ut officiis.</p>
+                        </div>
                     </li>
                     <li>
-                        <p>Call directly:</p>
-                        <p>+99 (0) 344 956 4050</p>
+                        <i class="fas fa-leaf"></i>
+                        <div>
+                            <h3>Guided Nature Excursions</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facere ratione enim ut officiis.</p>
+                        </div>
+    
+                    </li>
+    
+    
+                </ul>
+                <ul>
+                    <li>
+                        <i class="fas fa-utensils"></i>
+                        <div>
+                            <h3>Five Star Restaurants</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facere ratione enim ut officiis.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-glass-martini"></i>
+                        <div>
+                            <h3>All Inclusive</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facere ratione enim ut officiis.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-bell"></i>
+                        <div>
+                            <h3>Wake Up Service</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facere ratione enim ut officiis.</p>
+                        </div>
                     </li>
                 </ul>
+                
+                
             </div>
+            <img src="assets/home-3.jpeg" alt="">
         </section>
+        <div class="patternedBackground">
+            <!-- side arrow -->
+            <section class="review wrapper">
+                <div class="reviewDiv">
+                    <i class="fas fa-chevron-left"></i>
+                    <span class="lightText allCaps">Testimonials</span>
+                    <h3>What Clients Say</h3>
+                    <div>
+                        <p class="theReview">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias debitis veritatis non ab quisquam placeat sapiente amet expedita ipsam? Ipsum vitae itaque assumenda aperiam voluptatibus ducimus, officia quod labore rerum."</p>
+                    </div>
+                    <div class="stars">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="allCaps">Adam Levine - <span class="lowercase lightText">Review from </span><span class="lowercase">Trip Advisor</span></p>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </section>
+            <!-- side arrow -->
+            <section class="gallery wrapper">
+                <span class="allCaps lightText">Explore</span>
+                <h2>Gallery</h2>
+                <ul>
+                    <li>
+                        <img src="assets/home-4.jpeg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/home-5.jpeg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/home-6.jpeg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/home-7.jpeg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/home-8.jpeg" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/home-9.jpeg" alt="">
+                    </li>
+                </ul>
+            </section>
+            <section class="contact">
+                <img src="assets/home-10.jpeg" alt="">
+                <div class="wrapper">
+                    <ul>
+                        <li>
+                            <span class="allCaps lightText">Information</span>
+                            <h3>Contact Us</h3>
+                        </li>
+                        <li>
+                            <h4>Honolulu, <span class="lightText">Hawaii</span></h4>
+                            <p class="lightText">123 King Str, 4th Floor, Utral Building.</p>
+                            <p>Honolulu Hawaii</p>
+                        </li>
+                        <li>
+                            <p>Email: <span class="lightText">info@sunshinehotel.com</span></p>
+                        </li>
+                        <li>
+                            <p class="lightText">Call directly:</p>
+                            <p>+99 (0) 344 956 4050</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </main>
 
     <!-- home end -->
@@ -176,7 +218,8 @@
             </ul>
             <form action="">
                 <label for="email">Sign up for our newsletter</label>
-                <input type="email" id="email" name="Your email" placeholder="Your email"><i class="far fa-paper-plane" type="submit"></i>
+                <input type="email" id="email" name="Your email" placeholder="Your email">
+                <button type="submit"><i class="far fa-paper-plane" type="submit"></i></button>
             
             </form>
         </section>

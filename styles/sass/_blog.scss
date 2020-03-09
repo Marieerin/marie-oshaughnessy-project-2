@@ -3,34 +3,70 @@
 h2 {
     font-size: 34px;
 }
-.blogBody {
-    background-color: #CCCCCC;
     .blogMain {
-        background-color: #EDEDED;
-        padding: 20px 39px;
+        position: relative;
+        bottom: 60px;
+        background-color: $mainWhite;
+        padding: 39px 51px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        h1 {
-        font-size: 38px;
-        padding: 0;
+            flex-direction: column;
+            justify-content: center;
+            h2 {
+                font-size: 34px;
+                padding-left: 0;
+                padding-bottom: 20px;
+                border-bottom: 1px solid $secondaryLightColor;
+            }
+        }
+.blogBody {
+    background-color: $lightColor;
+        .article {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1 {
+                width: 78%;
+                font-size: 38px;
+                padding: 0;
+                text-align: center;
+            }
+            .blogIntro {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center
+            }
+
         }
     }
     .publicationCard {
         display: flex;
         width: 100%;
         justify-content: space-between;
+        padding: 20px 0;
+        line-height: 10px;
+        border-bottom: 1px solid $secondaryLightColor;
         img {
             border-radius: 50%;
         }
         .author {
             display: flex;
             align-items: center;
+            flex-direction: row!important;
             div {
-                align-items: center;
+                text-align: left;
+                align-items: start;
+                padding: 0 10px;
             }
         }
+        .publicationInfo {
+        display: flex;
+        justify-content: space-between;
+        li {
+            margin: 0 10px;
+        }
+    }
     }
     .article-socials {
         display: flex;
@@ -44,26 +80,25 @@ h2 {
         li {
             padding: 10px;
             i{
-               color: #CCCCCC;
+               color: $secondaryLightColor;
             }
             .fa-twitter::before {
-                color: lightblue;
+                color: rgb(58, 192, 236);
             }
         }
     }
     
     
-    .blogPost:first-child {
-        color: #CCCCCC;
+    .blogPost {
+        p:first-of-type {
+            color: $mainBlack;
+        }
     }
-    .publicationInfo {
-        display: flex;
-        justify-content: space-between;
-    }
+   
     .relatedPosts {
         h2 {
             text-align: left;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid $secondaryLightColor;
             width: 100%;
         }
         ul {
@@ -71,12 +106,13 @@ h2 {
             justify-content: space-between;
             align-items: center;
             li{
-                background-color: $lightColor;
+                background-color: $mainWhite;
                 width: calc(100% / 3 - 20px);
                 min-width: 205px;
                 text-align: left;
                 margin: 5px;
-                box-shadow:0 0 10px  $secondaryColor;
+                box-shadow:0 0 7px  $secondaryLightColor;
+                transition: all .5s;
 
                 img {
                     width: 100%;
@@ -87,7 +123,8 @@ h2 {
                 
             }
             li:hover {
-                transform: translate(3px, -10px);
+                transform: translate(3px, -7px);
+                box-shadow: 0px 7px 7px $secondaryLightColor;
             }
             span {
                 i{
@@ -96,7 +133,62 @@ h2 {
             }
         }
     }
+    .commentSection1 {
+        ul{
+            text-align: left;
+            li {
+                display: flex;
+                align-items: flex-start;
+                margin: 18px 0;
+            }
+            div {
+                background-color: $lightColor;
+                width: 80%;
+                padding: 7px;
+                h3 {
+                    span {
+                        color: $alertColor;
+                    }
+                }
+            }
+        }
+        .speachBubble {
+            margin-left: 20px;
+        }
 
-}
+    }
+    .commentSection2 {
 
+        fieldset {
+            border: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+        input:first-of-type {
+            margin-left: 0;
+        }
+        input {
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid $secondaryLightColor;
+            padding-top: 20px;
+            padding-right: 150px;
+            margin-left: 2px;
+        }
+        input:focus {
+            color: $mainBlack;
+            border-bottom: 1px solid $secondaryLightColor;
+        }
+        #comment {
+            padding: 0 81% 200px 0;
+        }
+        button {
+            background-color: $contrastColor;
+            color: $mainWhite;
+            padding: 20px 50px;
+            border: none;
+            border-radius: 2px;
+        }
+    }
 /* blog end */

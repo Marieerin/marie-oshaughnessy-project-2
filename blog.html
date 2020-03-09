@@ -9,8 +9,12 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="./styles/styles.css">
 
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i,700|Poppins:400,600&display=swap"
+    rel="stylesheet">
 
-    <title>Sunshine</title>
+
+    <title>Sunshine Blog</title>
     
 
 </head>
@@ -18,16 +22,17 @@
 <body class="blogBody">
     <!-- navigation bar -->
     <nav>
-        <section class="wrapper flexParent">
-            <ul class="flexParent">
-                <li><a href="#">Home</a></li>
+        <section class="wrapper">
+            <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Reserve</a></li>
             </ul>
             <h2>Sunshine</h2>
-            <ul class="flexParent">
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+            <i class="fas fa-bars"></i>
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li>
                     <a href="#"><i class="fas fa-search"></i></a>
                 </li>
@@ -45,35 +50,35 @@
     <main class="blogMain wrapper">
         <section class="article">
             <!-- title of blog post -->
-            <div>
+            <div class="blogIntro">
                 <h1>Sunshine Hotel in top 5 best hotel from TripAdvisor magazine</h1>
-                <span><a href="#">Home ></a><a href="#">Blog ></a><a href="#">Sunshine hotel in top 5 best hotel form TripAdvisor magazine</a> </span>
+                <span><a href="#" class="lightText">Home ></a><a href="#" class="lightText">Blog ></a><a href="#">Sunshine hotel in top 5 best hotel form TripAdvisor magazine</a> </span>
             </div>
             <div class="publicationCard">
                 <div class="author">
                     <img src="./assets/blog-2.jpeg" alt="">
                     <div>
                         <h3>Alex Furgson</h3>
-                        <span>Admin</span>
+                        <span class="lightText">Admin</span>
                     </div>
                 </div>
 
                 <ul class="publicationInfo">
                     <li>
                         <h3>Date</h3>
-                        <span>June 19th, 2018</span>
+                        <span class="lightText">June 19th, 2018</span>
                     </li>
                     <li>
                         <h3>Category</h3>
-                        <span>Travel, life style</span>
+                        <span class="lightText">Travel, life style</span>
                     </li>
                     <li>
                         <h3>Tag</h3>
-                        <span>hotel, magazine, top</span>
+                        <span class="lightText">hotel, magazine, top</span>
                     </li>
                 </ul>
             </div>
-            <div class="blogPost">
+            <div class="blogPost lightText">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae illo dolor tempore? Accusantium saepe ratione quam vero illo hic tempora, ut ipsa amet libero, corrupti eos natus animi possimus est.</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, quos. Doloremque assumenda velit quo, maiores nulla porro minus voluptates molestias libero sed vero dignissimos, enim earum explicabo unde aliquam voluptatum!</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam magni recusandae soluta alias minima, repellendus cupiditate, nam sequi temporibus incidunt esse debitis pariatur. Dicta voluptatibus commodi porro facilis voluptatum vel.</p>
@@ -128,27 +133,27 @@
                     </div>
                 </li>
             </ul>
-        </section class="commentSection1">
-        <h2>02 Comments</h2>
-            <ul>
-                <li>
-                    <img src="assets/blog-6.jpeg" alt="Display image">
-                    <div>
-                        <h3>Daniel Vandaft - <span>Reply</span></h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        <span>July 17 at 15 hourse ago</span>
-                    </div>
-                </li>
-                <li>
-                    <img src="assets/blog-7.jpeg" alt="Display image">
-                    <div>
-                        <h3>Jenifer Loops - <span>Reply</span></h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-                        <span>July 17 at 15 hourse ago</span>
-                    </div>
-                </li>
-            </ul>
-        <section>
+        </section >
+        <section class="commentSection1">
+            <h2>02 Comments</h2>
+                <ul>
+                    <li>
+                        <img src="assets/blog-6.jpeg" alt="Display image">
+                        <div class="speachBubble">
+                            <h3>Daniel Vandaft - <span>Reply</span></h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            <span>July 17 at 15 hourse ago</span>
+                        </div>
+                    </li>
+                    <li >
+                        <img src="assets/blog-7.jpeg" alt="Display image">
+                        <div class="speachBubble">
+                            <h3>Jenifer Loops - <span>Reply</span></h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            <span>July 17 at 15 hourse ago</span>
+                        </div>
+                    </li>
+                </ul>
 
         </section>
 
@@ -168,7 +173,7 @@
                     <input type="text" id="comment" placeholder="Here goes your comment">
                 </fieldset>
                 <fieldset>
-                    <button type="submit"></button>
+                    <button type="submit">Send Message</button>
                 </fieldset>
             </form>
         </section>

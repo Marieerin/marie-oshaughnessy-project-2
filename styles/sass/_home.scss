@@ -1,11 +1,17 @@
 .homeBody {
-    background-image: url('assets/pattern.png');
-    background-repeat: repeat;
+    h1{ 
+        font-size: 35px;
+    }
+
     .homeMain {
+
         .aboutUs {
             background-color: $lightColor;
             text-align: center;
+            padding: 100px 0;            
+
             .aboutUsPhotographAndContent {
+                margin: 61px 0;
                 display: flex;
                 h2 {
                     padding: 0;
@@ -30,9 +36,122 @@
             display: flex;
             flex-direction: column;
             width: calc(50vw / 2);
-            margin-left: 18px;
+            margin-left: 50px;
+            text-align: left;
+            .theBar {
+                background-color: $mainBlack;
+                width: 50px;
+                height: 2px;
+            }
             span {
                 display: inline-block;
+            }
+        }
+        .patternedBackground {
+            background-image: url('../assets/pattern.png');
+            padding: 100px 0 0;
+        }
+        .categories {
+            background-color: $mainWhite;
+            display: flex;
+            justify-content: flex-end;
+            i {
+                font-size: 30px;
+                margin-top: 18px;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                width: 25vw;
+                margin-left: 30px;
+                margin-bottom: 150px;
+            }
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            div {
+                margin-left: 15px;
+            }
+            // img {
+            //     position: relative;
+            //     left: 93px;
+            // }
+            div.wrapper {
+                display: flex;
+            }
+        }
+        .review {
+            background-color: $mainWhite;
+            padding: 20px;
+            box-shadow: 1px 0 10px $lightColor;
+            
+            .fa-chevron-left {
+                position: absolute;
+                left: 30px;
+                font-size: 30px;
+            }
+            .fa-chevron-right {
+                position: absolute;
+                right: 30px;
+                font-size: 30px;
+            }
+            .reviewDiv {
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .theReview {
+                font-style: italic;
+                font-family: $primaryFont;
+                font-weight: 400;
+            }
+            .stars {
+                display: flex;
+                font-size: 20px;
+                color: $contrastColor2;
+                i {
+                    margin: .5px;
+                }
+            }
+        }
+        .gallery {
+            display: flex;
+            padding: 30px 0;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                li {
+                    width: 25%;
+                    margin: 0 8px;
+                    img {
+                        margin: 5px;
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+        .contact {
+            display: flex;
+            background-color: $mainWhite;
+            align-items: start;
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 30px;
+                
+            }
+            h3 {
+                font-size: 35px;
             }
         }
     }

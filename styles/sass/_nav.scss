@@ -4,8 +4,10 @@
     text-decoration:none;
 }
 nav {
-    background-color: white
-
+    background-color: $mainWhite;
+    .fa-bars {
+        display: none;
+    }
     section {
         display: flex;
         flex-direction: row;
@@ -22,7 +24,6 @@ nav {
     li {
         list-style:none;
         padding: 10px;
-
     }
     li a:hover,
     li a:focus {

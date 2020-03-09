@@ -15,15 +15,24 @@
             display: block;
             padding-bottom: 20px;
         }
-        button[type="submit"] {
-            background-color: black;
-            border-top: none;
-            border-right: none;
-            border-bottom: 1.5px solid #99999952;
-            border-left: none;
-            color: #CCCCCC;
-        }
     } 
+    input {
+        background-color: black;
+        color: $secondaryColor;
+        border-bottom: 1px solid $secondaryColor;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+    }
+    button {
+        background-color: $mainBlack;
+        border: none;
+        color: $secondaryColor;
+        i{
+            background-color: $mainBlack;
+        }
+    }
+
 }
 .mapsFAQEmail,
 .copyAndSocials {

@@ -1,18 +1,28 @@
 $mainBlack: #000000;
 $mainWhite: #ffffff;
 $lightColor: #EDEDED;
-// Pale turquoise
-// #A4F1DC
-// Yellowish orange
-// #F6AB09
-// Baby shit green
 $contrastColor:#84A016;
 $secondaryColor: #999999;
 $secondaryLightColor:#CCCCCC;
-// Very light pink two
-// 
+$alertColor: #A4F1DC;
+$contrastColor2: #F6AB09;
+
+$primaryFont: 'Playfair Display', serif;
+$secondaryFont:'Poppins', sans-serif;
+
+
 
 /* global styles */
+html {
+    overflow-x: hidden;
+    font-family: $primaryFont;
+}
+p, span, li, label {
+    font-family: $secondaryFont;
+    font-size: 15px;
+    line-height: 30px; 
+    letter-spacing: 0.3px;
+}
 a {
     text-decoration: none;
     color: black;
@@ -51,10 +61,14 @@ ul {
 .lightText {
     color: $secondaryColor;
 }
-h1,
-h2 {
-        font-size: 58px;
-    }
-/* end of global styles */
+.allCaps {
+    text-transform: uppercase;
+}
+.lowercase {
+    text-transform: none;
+}
 
-/* mixins */
+.allCaps.lightText {
+    letter-spacing: 8px;
+}
+/* end of global styles */
